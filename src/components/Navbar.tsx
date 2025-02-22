@@ -2,37 +2,45 @@ import React, { useState, useEffect } from 'react';
 import { Link, useLocation } from 'react-router-dom';
 import { Building2, Menu, X } from 'lucide-react';
 
-const Navbar = () => {
+const Navbar: React.FC = () => {
   const location = useLocation();
   const [isScrolled, setIsScrolled] = useState(false);
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
-  const [menuLinks, setMenuLinks] = useState([]); // Store menu links from API
 
   useEffect(() => {
     const handleScroll = () => {
-      setIsScrolled(window.scrollY > 40);
+      setIsScrolled(window.scrollY > 40); // Adjusted scroll threshold
     };
 
     window.addEventListener('scroll', handleScroll);
     return () => window.removeEventListener('scroll', handleScroll);
   }, []);
 
+  // 🔹 Fetch API Call
   useEffect(() => {
-    // Fetch navbar links from the backend
-    fetch(`${process.env.REACT_APP_API_URL}/api/navbar`)
-      .then((response) => response.json())
-      .then((data) => setMenuLinks(data.links))
-      .catch((error) => console.error('Error fetching navbar data:', error));
+    const fetchData = async () => {
+      try {
+        const response = await fetch('https://gemconsultersbackend.onrender.com'); // Replace with your API endpoint
+        const data = await response.json();
+        console.log('Fetched Data:', data);
+      } catch (error) {
+        console.error('Error fetching data:', error);
+      }
+    };
+
+    fetchData();
   }, []);
 
-  const isActive = (path) => location.pathname === path;
+  const isActive = (path: string) => location.pathname === path;
 
   return (
     <>
       {/* Push content down to avoid being hidden under Navbar */}
       <div className="h-[40px]"></div>
 
-      <nav className={`fixed w-full top-[40px] z-50 transition-all duration-300 ${isScrolled ? 'bg-white/95 backdrop-blur-md shadow-lg' : 'bg-transparent'}`}>
+      <nav className={`fixed w-full top-[40px] z-50 transition-all duration-300 ${
+        isScrolled ? 'bg-white/95 backdrop-blur-md shadow-lg' : 'bg-transparent'
+      }`}>
         <div className="container mx-auto px-4 py-4">
           <div className="flex justify-between items-center">
             <Link to="/" className="flex items-center">
@@ -45,28 +53,34 @@ const Navbar = () => {
 
             {/* Desktop Menu */}
             <div className="hidden md:flex space-x-8">
-              {menuLinks.length > 0 ? (
-                menuLinks.map((item) => (
-                  <Link
-                    key={item.path}
-                    to={item.path}
-                    className={`relative px-2 py-1 transition-colors ${
-                      isActive(item.path)
-                        ? 'text-orange-500'
-                        : `${isScrolled ? 'text-gray-700' : 'text-white'} hover:text-orange-500`
-                    }`}
-                  >
-                    {item.label}
-                    {isActive(item.path) && <span className="absolute bottom-0 left-0 w-full h-0.5 bg-orange-500 rounded-full"></span>}
-                  </Link>
-                ))
-              ) : (
-                <p className="text-gray-500">Loading...</p>
-              )}
+              {[
+                { path: '/', label: 'Home' },
+                { path: '/about', label: 'About Us' },
+                { path: '/services', label: 'Services' },
+                { path: '/contact', label: 'Contact Us' }
+              ].map((item) => (
+                <Link
+                  key={item.path}
+                  to={item.path}
+                  className={`relative px-2 py-1 transition-colors ${
+                    isActive(item.path)
+                      ? 'text-orange-500'
+                      : `${isScrolled ? 'text-gray-700' : 'text-white'} hover:text-orange-500`
+                  }`}
+                >
+                  {item.label}
+                  {isActive(item.path) && (
+                    <span className="absolute bottom-0 left-0 w-full h-0.5 bg-orange-500 rounded-full"></span>
+                  )}
+                </Link>
+              ))}
             </div>
 
             {/* Mobile Menu Button */}
-            <button className="md:hidden text-gray-600" onClick={() => setIsMobileMenuOpen(!isMobileMenuOpen)}>
+            <button
+              className="md:hidden text-gray-600"
+              onClick={() => setIsMobileMenuOpen(!isMobileMenuOpen)}
+            >
               {isMobileMenuOpen ? <X size={24} /> : <Menu size={24} />}
             </button>
           </div>
@@ -75,20 +89,25 @@ const Navbar = () => {
           {isMobileMenuOpen && (
             <div className="md:hidden absolute top-full left-0 w-full bg-white shadow-lg py-4 slide-in">
               <div className="container mx-auto px-4">
-                {menuLinks.length > 0 ? (
-                  menuLinks.map((item) => (
-                    <Link
-                      key={item.path}
-                      to={item.path}
-                      className={`block py-3 ${isActive(item.path) ? 'text-orange-500' : 'text-gray-700 hover:text-orange-500'}`}
-                      onClick={() => setIsMobileMenuOpen(false)}
-                    >
-                      {item.label}
-                    </Link>
-                  ))
-                ) : (
-                  <p className="text-gray-500">Loading...</p>
-                )}
+                {[
+                  { path: '/', label: 'Home' },
+                  { path: '/about', label: 'About Us' },
+                  { path: '/services', label: 'Services' },
+                  { path: '/contact', label: 'Contact Us' }
+                ].map((item) => (
+                  <Link
+                    key={item.path}
+                    to={item.path}
+                    className={`block py-3 ${
+                      isActive(item.path)
+                        ? 'text-orange-500'
+                        : 'text-gray-700 hover:text-orange-500'
+                    }`}
+                    onClick={() => setIsMobileMenuOpen(false)}
+                  >
+                    {item.label}
+                  </Link>
+                ))}
               </div>
             </div>
           )}

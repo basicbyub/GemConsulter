@@ -80,17 +80,18 @@ const About: React.FC = () => {
         <div className="grid md:grid-cols-3 gap-8">
           {[
             {
-              name: "Rajesh Kumar",
+              name: "Uttam Bansal",
               position: "Senior Consultant",
-              image: "https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?ixlib=rb-1.2.1&auto=format&fit=crop&w=400&q=80"
+              <img src="/uttam.jpg" alt="Company Logo" className="w-16 h-16" />
+
             },
             {
-              name: "Priya Sharma",
+              name: "Himanshu Bansal",
               position: "Registration Specialist",
               image: "https://images.unsplash.com/photo-1494790108377-be9c29b29330?ixlib=rb-1.2.1&auto=format&fit=crop&w=400&q=80"
             },
             {
-              name: "Amit Patel",
+              name: "Pooja Bansal",
               position: "Technical Expert",
               image: "https://images.unsplash.com/photo-1500648767791-00dcc994a43e?ixlib=rb-1.2.1&auto=format&fit=crop&w=400&q=80"
             }

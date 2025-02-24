@@ -49,7 +49,7 @@ const Home: React.FC = () => {
               { number: "1000+", label: "Clients Served" },
               { number: "98%", label: "Success Rate" },
               { number: "24/7", label: "Support" },
-              { number: "15+", label: "Years Experience" }
+              { number: "8+", label: "Years Experience" }
             ].map((stat, index) => (
               <div key={index} className="text-center p-6 feature-card">
                 <h3 className="text-4xl font-bold text-blue-900 mb-2">{stat.number}</h3>

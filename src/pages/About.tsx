@@ -82,7 +82,7 @@ const About: React.FC = () => {
             {
               name: "Uttam Bansal",
               position: "Senior Consultant",
-              image: "/uttam.jpg"
+              image: "uttam.jpg"
 
             },
             {

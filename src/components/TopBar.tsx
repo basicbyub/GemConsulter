@@ -10,9 +10,10 @@ const TopBar: React.FC = () => {
             <Phone size={16} className="mr-2 group-hover:animate-bounce" />
             +91 - 77 19 55 38 27
           </a>
-          <a href="mailto:info@gemconsultancy.in" className="flex items-center hover:text-orange-400 transition-colors group">
+          <a href="mailto:gemconsulters@gmail.com" className="flex items-center hover:text-orange-400 transition-colors group">
             <Mail size={16} className="mr-2 group-hover:animate-bounce" />
-            info@gemconsultancy.in
+            gemconsulters@gmail.com
+
           </a>
         </div>
         <div className="flex items-center space-x-4">

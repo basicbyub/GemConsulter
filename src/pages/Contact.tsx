@@ -50,13 +50,13 @@ const Contact: React.FC = () => {
             {
               icon: <Mail className="w-8 h-8 text-orange-500" />,
               title: "Email",
-              info: "info@gemconsultancy.in",
-              link: "mailto:info@gemconsultancy.in"
+              info: "gemconsulters@gmail.com",
+              link: "mailto:gemconsulters@gmail.com"
             },
             {
               icon: <MapPin className="w-8 h-8 text-orange-500" />,
               title: "Address",
-              info: "123 Business District, New Delhi, India",
+              info: "Old Cinema Road, Barnala, Punjab, India",
               link: "#"
             }
           ].map((contact, index) => (

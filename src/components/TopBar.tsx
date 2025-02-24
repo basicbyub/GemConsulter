@@ -18,10 +18,10 @@ const TopBar: React.FC = () => {
         </div>
         <div className="flex items-center space-x-4">
           <a href="#" className="hover:text-orange-400 transition-colors transform hover:scale-110">
-            <Youtube size={18} />
+            <Mail size={18} />
           </a>
           <a href="#" className="hover:text-orange-400 transition-colors transform hover:scale-110">
-            <Linkedin size={18} />
+            <Phone size={18} />
           </a>
         </div>
       </div>

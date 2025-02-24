@@ -39,15 +39,16 @@ const Navbar: React.FC = () => {
       <div className="h-[40px]"></div>
 
       <nav className={`fixed w-full top-[40px] z-50 transition-all duration-300 ${
-        isScrolled ? 'bg-white/95 backdrop-blur-md shadow-lg' : 'bg-transparent'
-      }`}>
+    isScrolled ? 'bg-gray-200/95 backdrop-blur-md shadow-lg' : 'bg-transparent'
+}`}>
+
         <div className="container mx-auto px-4 py-4">
           <div className="flex justify-between items-center">
             <Link to="/" className="flex items-center">
               <Building2 size={32} className="text-orange-500 mr-2" />
               <div>
                 <span className="text-2xl font-bold text-orange-500">GeM</span>
-                <span className={`text-2xl font-bold ${isScrolled ? 'text-gray-900' : 'text-white'}`}> Consultancy</span>
+                <span className={`text-2xl font-bold ${isScrolled ? 'text-gray-900' : 'text-gray-800'}`}> Consultancy</span>
               </div>
             </Link>
 
@@ -65,7 +66,7 @@ const Navbar: React.FC = () => {
                   className={`relative px-2 py-1 transition-colors ${
                     isActive(item.path)
                       ? 'text-orange-500'
-                      : `${isScrolled ? 'text-gray-700' : 'text-white'} hover:text-orange-500`
+                      : `${isScrolled ? 'text-gray-700' : 'text-gray-800'} hover:text-orange-500`
                   }`}
                 >
                   {item.label}

@@ -80,20 +80,20 @@ const About: React.FC = () => {
         <div className="grid md:grid-cols-3 gap-8">
           {[
             {
-              name: "Uttam Bansal",
+              name: "Himanshu Bansal",
               position: "Senior Consultant",
-              image: "https://raw.githubusercontent.com/basicbyub/GemConsulter/refs/heads/main/uttam.JPG"
+              image: "https://raw.githubusercontent.com/basicbyub/GemConsulter/refs/heads/main/himanshu.jpg"
 
             },
             {
-              name: "Himanshu Bansal",
+              name: "Uttam Bansal",
               position: "Registration Specialist",
-              image: "https://raw.githubusercontent.com/basicbyub/GemConsulter/refs/heads/main/himanshu.jpg"
+              image: "https://raw.githubusercontent.com/basicbyub/GemConsulter/refs/heads/main/uttam.JPG"
             },
             {
-              name: "Pooja Bansal",
+              name: "Chirag Bansal",
               position: "Technical Expert",
-              image: "https://images.unsplash.com/photo-1500648767791-00dcc994a43e?ixlib=rb-1.2.1&auto=format&fit=crop&w=400&q=80"
+              image: "https://raw.githubusercontent.com/basicbyub/GemConsulter/refs/heads/main/chirag.jpg"
             }
           ].map((member, index) => (
             <div key={index} className="bg-white rounded-lg shadow-lg overflow-hidden">

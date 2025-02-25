@@ -82,13 +82,13 @@ const About: React.FC = () => {
             {
               name: "Uttam Bansal",
               position: "Senior Consultant",
-              image: "uttam.jpg"
+              image: "https://raw.githubusercontent.com/basicbyub/GemConsulter/refs/heads/main/uttam.JPG"
 
             },
             {
               name: "Himanshu Bansal",
               position: "Registration Specialist",
-              image: "himanshu.jpg"
+              image: "https://raw.githubusercontent.com/basicbyub/GemConsulter/refs/heads/main/himanshu.jpg"
             },
             {
               name: "Pooja Bansal",

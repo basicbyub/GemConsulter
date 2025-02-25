@@ -17,10 +17,10 @@ const TopBar: React.FC = () => {
           </a>
         </div>
         <div className="flex items-center space-x-4">
-          <a href="#" className="hover:text-orange-400 transition-colors transform hover:scale-110">
+          <a href="mailto:gemconsulters@gmail.com" className="hover:text-orange-400 transition-colors transform hover:scale-110">
             <Mail size={18} />
           </a>
-          <a href="#" className="hover:text-orange-400 transition-colors transform hover:scale-110">
+          <a href="tel:+917719553827" className="hover:text-orange-400 transition-colors transform hover:scale-110">
             <Phone size={18} />
           </a>
         </div>

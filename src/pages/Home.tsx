@@ -46,7 +46,7 @@ const Home: React.FC = () => {
         <div className="container mx-auto px-4">
           <div className="grid md:grid-cols-4 gap-8">
             {[
-              { number: "1000+", label: "Clients Served" },
+              { number: "8000+", label: "Clients Served" },
               { number: "98%", label: "Success Rate" },
               { number: "24/7", label: "Support" },
               { number: "8+", label: "Years Experience" }

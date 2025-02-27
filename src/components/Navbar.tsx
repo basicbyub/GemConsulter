@@ -47,8 +47,8 @@ const Navbar: React.FC = () => {
             <Link to="/" className="flex items-center">
               <Building2 size={32} className="text-orange-500 mr-2" />
               <div>
-                <span className="text-2xl font-bold text-orange-500">GeM</span>
-                <span className={`text-2xl font-bold ${isScrolled ? 'text-gray-900' : 'text-gray-800'}`}> Consultancy</span>
+                <span className="text-xl sm:text-2xl font-bold text-orange-500">GeM</span>
+                <span className={`text-xl sm:text-2xl font-bold ${isScrolled ? 'text-gray-900' : 'text-gray-800'}`}> Consultancy</span>
               </div>
             </Link>
 

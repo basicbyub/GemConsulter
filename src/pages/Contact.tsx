@@ -58,20 +58,41 @@ const Contact: React.FC = () => {
       </div>
 
       {/* Contact Information */}
-      <div className="container mx-auto px-4 py-16">
-        <div className="grid md:grid-cols-3 gap-8 mb-16">
-          {[
-            { icon: <Phone className="w-8 h-8 text-orange-500" />, title: "Phone", info: "+91 - 77 19 55 38 27", link: "tel:+917719553827" },
-            { icon: <Mail className="w-8 h-8 text-orange-500" />, title: "Email", info: "gemconsulters@gmail.com", link: "mailto:gemconsulters@gmail.com" },
-            { icon: <MapPin className="w-8 h-8 text-orange-500" />, title: "Address", info: "Old Cinema Road, Barnala, Punjab, India", link: "https://maps.app.goo.gl/kmCj6bR8oNh8zteK8" },
-          ].map((contact, index) => (
-            <a key={index} href={contact.link} className="bg-white p-6 rounded-lg shadow-lg text-center hover:shadow-xl transition-shadow">
-              <div className="flex justify-center mb-4">{contact.icon}</div>
-              <h3 className="text-xl font-semibold text-gray-900 mb-2">{contact.title}</h3>
-              <p className="text-gray-600">{contact.info}</p>
-            </a>
-          ))}
-        </div>
+<div className="container mx-auto px-4 py-16">
+  <div className="grid md:grid-cols-3 gap-8 mb-16">
+    {[
+      {
+        icon: <Phone className="w-8 h-8 text-orange-500" />,
+        title: "Phone",
+        info: "+91 - 77 19 55 38 27",
+        link: "tel:+917719553827",
+      },
+      {
+        icon: <Mail className="w-8 h-8 text-orange-500" />,
+        title: "Email",
+        info: "gemconsulters@gmail.com",
+        link: "mailto:gemconsulters@gmail.com",
+      },
+      {
+        icon: <MapPin className="w-8 h-8 text-orange-500" />,
+        title: "Address",
+        info: "Old Cinema Road, Barnala, Punjab, India",
+        link: "https://maps.app.goo.gl/kmCj6bR8oNh8zteK8",
+        isExternal: true, // Flag for external links
+      },
+    ].map((contact, index) => (
+      <a
+        key={index}
+        href={contact.link}
+        className="bg-white p-6 rounded-lg shadow-lg text-center hover:shadow-xl transition-shadow"
+        {...(contact.isExternal ? { target: "_blank", rel: "noopener noreferrer" } : {})} // Open external links in new tab safely
+      >
+        <div className="flex justify-center mb-4">{contact.icon}</div>
+        <h3 className="text-xl font-semibold text-gray-900 mb-2">{contact.title}</h3>
+        <p className="text-gray-600">{contact.info}</p>
+      </a>
+    ))}
+  </div>
 
         {/* Contact Form */}
         <div className="max-w-2xl mx-auto">

@@ -63,7 +63,7 @@ const Contact: React.FC = () => {
           {[
             { icon: <Phone className="w-8 h-8 text-orange-500" />, title: "Phone", info: "+91 - 77 19 55 38 27", link: "tel:+917719553827" },
             { icon: <Mail className="w-8 h-8 text-orange-500" />, title: "Email", info: "gemconsulters@gmail.com", link: "mailto:gemconsulters@gmail.com" },
-            { icon: <MapPin className="w-8 h-8 text-orange-500" />, title: "Address", info: "Old Cinema Road, Barnala, Punjab, India", link: "#" },
+            { icon: <MapPin className="w-8 h-8 text-orange-500" />, title: "Address", info: "Old Cinema Road, Barnala, Punjab, India", link: "https://maps.app.goo.gl/kmCj6bR8oNh8zteK8" },
           ].map((contact, index) => (
             <a key={index} href={contact.link} className="bg-white p-6 rounded-lg shadow-lg text-center hover:shadow-xl transition-shadow">
               <div className="flex justify-center mb-4">{contact.icon}</div>

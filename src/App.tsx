@@ -1,10 +1,10 @@
 import React from 'react';
 import { Routes, Route } from 'react-router-dom';
 import Layout from './components/Layout';
-import Home from './pages/Home';
-import About from './pages/About';
-import Services from './pages/Services';
-import Contact from './pages/Contact';
+import Home from './Home';
+import About from './About';
+import Services from './Services';
+import Contact from './Contact';
 
 function App() {
   return (

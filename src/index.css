@@ -66,3 +66,11 @@
   box-shadow: 0 0 0 2px rgba(249, 115, 22, 0.2);
 }
 
+/* This hides the service areas (locations) text */
+.hidden-locations {
+  font-size: 0; /* Prevents any text display */
+  color: #f5f5f5; /* Use a color similar to your background to blend it in */
+  visibility: hidden; /* Ensures it's not visible */
+  position: absolute; /* Keeps it out of the flow and off-screen */
+  left: -9999px; /* Pushes it off the screen */
+}

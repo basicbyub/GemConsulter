@@ -51,8 +51,8 @@ const Contact: React.FC = () => {
           <div className="max-w-3xl mx-auto text-center">
             <h1 className="text-4xl font-bold mb-6">Contact Us</h1>
             <p className="text-xl">
-              Get in touch with us for any queries about GeM registration and support services.
-            </p>
+  Get in touch with us for expert guidance on vendor onboarding, business documentation, compliance, and procurement support services.
+</p>
           </div>
         </div>
       </div>

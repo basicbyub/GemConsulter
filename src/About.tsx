@@ -1,17 +1,137 @@
+// import React from 'react';
+// import { Award, Users, Target, Clock } from 'lucide-react';
+
+// const About: React.FC = () => {
+//   return (
+//     <div className="py-16">
+//       {/* Hero Section */}
+//       <div className="bg-gray-50 py-16">
+//         <div className="container mx-auto px-4">
+//           <div className="max-w-3xl mx-auto text-center">
+//             <h1 className="text-4xl font-bold text-gray-900 mb-6">About GeM Consultancy</h1>
+//             <p className="text-xl text-gray-600">
+//               We are dedicated to helping businesses navigate the Government e-Marketplace (GeM) 
+//               with expert guidance and comprehensive support services.
+//             </p>
+//           </div>
+//         </div>
+//       </div>
+
+//       {/* Mission & Vision */}
+//       <div className="container mx-auto px-4 py-16">
+//         <div className="grid md:grid-cols-2 gap-12">
+//           <div className="bg-white p-8 rounded-lg shadow-lg">
+//             <h2 className="text-2xl font-bold text-gray-900 mb-4">Our Mission</h2>
+//             <p className="text-gray-600">
+//               To simplify the GeM registration process and empower businesses to participate 
+//               effectively in government procurement opportunities through expert guidance and support.
+//             </p>
+//           </div>
+//           <div className="bg-white p-8 rounded-lg shadow-lg">
+//             <h2 className="text-2xl font-bold text-gray-900 mb-4">Our Vision</h2>
+//             <p className="text-gray-600">
+//               To become the most trusted partner for businesses seeking to establish and 
+//               grow their presence on the Government e-Marketplace platform.
+//             </p>
+//           </div>
+//         </div>
+//       </div>
+
+//       {/* Key Features */}
+//       <div className="bg-gray-50 py-16">
+//         <div className="container mx-auto px-4">
+//           <h2 className="text-3xl font-bold text-center text-gray-900 mb-12">Why Choose Us</h2>
+//           <div className="grid md:grid-cols-4 gap-8">
+//             {[
+//               {
+//                 icon: <Award className="w-12 h-12 text-orange-500" />,
+//                 title: "Expert Team",
+//                 description: "Experienced professionals dedicated to your success"
+//               },
+//               {
+//                 icon: <Users className="w-12 h-12 text-orange-500" />,
+//                 title: "Client Focus",
+//                 description: "Personalized attention to meet your specific needs"
+//               },
+//               {
+//                 icon: <Target className="w-12 h-12 text-orange-500" />,
+//                 title: "Result Oriented",
+//                 description: "Committed to achieving the best outcomes"
+//               },
+//               {
+//                 icon: <Clock className="w-12 h-12 text-orange-500" />,
+//                 title: "Quick Process",
+//                 description: "Efficient and timely service delivery"
+//               }
+//             ].map((feature, index) => (
+//               <div key={index} className="text-center p-6">
+//                 <div className="flex justify-center mb-4">{feature.icon}</div>
+//                 <h3 className="text-xl font-semibold text-gray-900 mb-2">{feature.title}</h3>
+//                 <p className="text-gray-600">{feature.description}</p>
+//               </div>
+//             ))}
+//           </div>
+//         </div>
+//       </div>
+
+//       {/* Team Section */}
+//       <div className="container mx-auto px-4 py-16">
+//         <h2 className="text-3xl font-bold text-center text-gray-900 mb-12">Our Expert Team</h2>
+//         <div className="grid md:grid-cols-3 gap-8">
+//           {[
+//             {
+//               name: "Himanshu Bansal",
+//               position: "Senior Consultant",
+//               image: "https://raw.githubusercontent.com/basicbyub/GemConsulter/refs/heads/main/himanshu.jpg"
+
+//             },
+//             {
+//               name: "Uttam Bansal",
+//               position: "Registration Specialist",
+//               image: "https://raw.githubusercontent.com/basicbyub/GemConsulter/refs/heads/main/uttam.JPG"
+//             },
+//             {
+//               name: "Chirag Bansal",
+//               position: "Technical Expert",
+//               image: "https://raw.githubusercontent.com/basicbyub/GemConsulter/refs/heads/main/chirag.jpg"
+//             }
+//           ].map((member, index) => (
+//             <div key={index} className="bg-white rounded-lg shadow-lg overflow-hidden">
+//               <img src={member.image} alt={member.name} className="w-full h-64 object-cover" />
+//               <div className="p-6">
+//                 <h3 className="text-xl font-semibold text-gray-900">{member.name}</h3>
+//                 <p className="text-gray-600">{member.position}</p>
+//               </div>
+//             </div>
+//           ))}
+//         </div>
+//       </div>
+//     </div>
+//   );
+// };
+
+// export default About;
+
+
 import React from 'react';
 import { Award, Users, Target, Clock } from 'lucide-react';
 
 const About: React.FC = () => {
   return (
     <div className="py-16">
+
       {/* Hero Section */}
       <div className="bg-gray-50 py-16">
         <div className="container mx-auto px-4">
           <div className="max-w-3xl mx-auto text-center">
-            <h1 className="text-4xl font-bold text-gray-900 mb-6">About GeM Consultancy</h1>
+            <h1 className="text-4xl font-bold text-gray-900 mb-6">
+              About Our Consultancy
+            </h1>
             <p className="text-xl text-gray-600">
-              We are dedicated to helping businesses navigate the Government e-Marketplace (GeM) 
-              with expert guidance and comprehensive support services.
+              We are an independent business consultancy providing professional
+              guidance and end-to-end support for vendor onboarding, business
+              documentation, compliance requirements, and digital procurement
+              processes across various industries.
             </p>
           </div>
         </div>
@@ -20,53 +140,63 @@ const About: React.FC = () => {
       {/* Mission & Vision */}
       <div className="container mx-auto px-4 py-16">
         <div className="grid md:grid-cols-2 gap-12">
+
           <div className="bg-white p-8 rounded-lg shadow-lg">
             <h2 className="text-2xl font-bold text-gray-900 mb-4">Our Mission</h2>
             <p className="text-gray-600">
-              To simplify the GeM registration process and empower businesses to participate 
-              effectively in government procurement opportunities through expert guidance and support.
+              Our mission is to simplify complex business procedures by
+              providing reliable guidance, transparent processes, and practical
+              solutions that help organizations grow with confidence.
             </p>
           </div>
+
           <div className="bg-white p-8 rounded-lg shadow-lg">
             <h2 className="text-2xl font-bold text-gray-900 mb-4">Our Vision</h2>
             <p className="text-gray-600">
-              To become the most trusted partner for businesses seeking to establish and 
-              grow their presence on the Government e-Marketplace platform.
+              Our vision is to become a trusted business consulting partner,
+              empowering organizations with expert support for compliance,
+              documentation, and digital business opportunities.
             </p>
           </div>
+
         </div>
       </div>
 
-      {/* Key Features */}
+      {/* Why Choose Us */}
       <div className="bg-gray-50 py-16">
         <div className="container mx-auto px-4">
-          <h2 className="text-3xl font-bold text-center text-gray-900 mb-12">Why Choose Us</h2>
+          <h2 className="text-3xl font-bold text-center text-gray-900 mb-12">
+            Why Choose Us
+          </h2>
+
           <div className="grid md:grid-cols-4 gap-8">
             {[
               {
                 icon: <Award className="w-12 h-12 text-orange-500" />,
-                title: "Expert Team",
-                description: "Experienced professionals dedicated to your success"
+                title: "Experienced Team",
+                description: "Knowledgeable professionals providing practical guidance"
               },
               {
                 icon: <Users className="w-12 h-12 text-orange-500" />,
-                title: "Client Focus",
-                description: "Personalized attention to meet your specific needs"
+                title: "Client-Centric Approach",
+                description: "Personalized assistance based on your business needs"
               },
               {
                 icon: <Target className="w-12 h-12 text-orange-500" />,
-                title: "Result Oriented",
-                description: "Committed to achieving the best outcomes"
+                title: "Process-Focused",
+                description: "Clear, structured, and transparent service delivery"
               },
               {
                 icon: <Clock className="w-12 h-12 text-orange-500" />,
-                title: "Quick Process",
-                description: "Efficient and timely service delivery"
+                title: "Timely Support",
+                description: "Efficient coordination to save your valuable time"
               }
             ].map((feature, index) => (
               <div key={index} className="text-center p-6">
                 <div className="flex justify-center mb-4">{feature.icon}</div>
-                <h3 className="text-xl font-semibold text-gray-900 mb-2">{feature.title}</h3>
+                <h3 className="text-xl font-semibold text-gray-900 mb-2">
+                  {feature.title}
+                </h3>
                 <p className="text-gray-600">{feature.description}</p>
               </div>
             ))}
@@ -76,36 +206,58 @@ const About: React.FC = () => {
 
       {/* Team Section */}
       <div className="container mx-auto px-4 py-16">
-        <h2 className="text-3xl font-bold text-center text-gray-900 mb-12">Our Expert Team</h2>
+        <h2 className="text-3xl font-bold text-center text-gray-900 mb-12">
+          Our Team
+        </h2>
+
         <div className="grid md:grid-cols-3 gap-8">
           {[
             {
               name: "Himanshu Bansal",
-              position: "Senior Consultant",
+              position: "Consultant",
               image: "https://raw.githubusercontent.com/basicbyub/GemConsulter/refs/heads/main/himanshu.jpg"
-
             },
             {
               name: "Uttam Bansal",
-              position: "Registration Specialist",
+              position: "Registration Support Specialist",
               image: "https://raw.githubusercontent.com/basicbyub/GemConsulter/refs/heads/main/uttam.JPG"
             },
             {
               name: "Chirag Bansal",
-              position: "Technical Expert",
+              position: "Technical Support",
               image: "https://raw.githubusercontent.com/basicbyub/GemConsulter/refs/heads/main/chirag.jpg"
             }
           ].map((member, index) => (
             <div key={index} className="bg-white rounded-lg shadow-lg overflow-hidden">
-              <img src={member.image} alt={member.name} className="w-full h-64 object-cover" />
+              <img
+                src={member.image}
+                alt={member.name}
+                className="w-full h-64 object-cover"
+              />
               <div className="p-6">
-                <h3 className="text-xl font-semibold text-gray-900">{member.name}</h3>
+                <h3 className="text-xl font-semibold text-gray-900">
+                  {member.name}
+                </h3>
                 <p className="text-gray-600">{member.position}</p>
               </div>
             </div>
           ))}
         </div>
       </div>
+
+      {/* Legal Disclaimer */}
+      <div className="bg-gray-100 py-6">
+        <div className="container mx-auto px-4 text-center text-gray-600 text-sm">
+          <p>
+            <strong>Disclaimer:</strong> We are an independent business consultancy.
+            We are not affiliated with, endorsed by, or officially associated
+            with any government department, public authority, or official
+            procurement platform. All consulting services are provided
+            independently.
+          </p>
+        </div>
+      </div>
+
     </div>
   );
 };

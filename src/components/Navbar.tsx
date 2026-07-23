@@ -20,7 +20,7 @@ const Navbar: React.FC = () => {
   useEffect(() => {
     const fetchData = async () => {
       try {
-        const response = await fetch('https://gemconsultersbackend.onrender.com'); // Replace with your API endpoint
+        const response = await fetch('https://gemconsultersbackend.onrender.com/api/contact'); // Replace with your API endpoint
         const data = await response.json();
         console.log('Fetched Data:', data);
       } catch (error) {

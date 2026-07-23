@@ -208,44 +208,53 @@ const About: React.FC = () => {
       </div>
 
       {/* Team Section */}
-      <div className="container mx-auto px-4 py-16">
-        <h2 className="text-3xl font-bold text-center text-gray-900 mb-12">
-          Our Team
-        </h2>
+<div className="container mx-auto px-4 py-16">
+  <h2 className="text-3xl font-bold text-center text-gray-900 mb-12">
+    Our Team
+  </h2>
 
-        <div className="grid md:grid-cols-3 gap-8">
-          {[
-            {
-              name: "Himanshu Bansal",
-              position: "Business Consultant",
-              image: "https://raw.githubusercontent.com/basicbyub/GemConsulter/refs/heads/main/himanshu.jpg"
-            },
-            {
-              name: "Uttam Bansal",
-              position: "Vendor Registration Specialist",
-              image: "https://raw.githubusercontent.com/basicbyub/GemConsulter/refs/heads/main/uttam.JPG"
-            },
-            {
-              name: "Chirag Bansal",
-              position: "Technical Support Executive",
-              image: "https://raw.githubusercontent.com/basicbyub/GemConsulter/refs/heads/main/chirag.jpg"
-            }
-          ].map((member, index) => (
-            <div key={index} className="bg-white rounded-lg shadow-lg overflow-hidden">
-              <img
-                src={member.image}
-                alt={member.name}
-                className="w-full h-64 object-cover"
-              />
-              <div className="p-6">
-                <h3 className="text-xl font-semibold text-gray-900">
-                  {member.name}
-                </h3>
-                <p className="text-gray-600">{member.position}</p>
-              </div>
-            </div>
-          ))}
+  <div className="grid md:grid-cols-3 gap-8">
+    {[
+      {
+        name: "Himanshu Bansal",
+        position: "Business Consultant",
+        image: "https://raw.githubusercontent.com/basicbyub/GemConsulter/refs/heads/main/himanshu.jpg"
+      },
+      {
+        name: "Uttam Bansal",
+        position: "Vendor Registration Specialist",
+        image: "https://raw.githubusercontent.com/basicbyub/GemConsulter/refs/heads/main/uttam.JPG"
+      },
+      {
+        name: "Chirag Bansal",
+        position: "Technical Support Executive",
+        image: "https://raw.githubusercontent.com/basicbyub/GemConsulter/refs/heads/main/chirag.jpg"
+      }
+    ].map((member, index) => (
+      <div
+        key={index}
+        className="bg-white rounded-xl shadow-lg hover:shadow-xl transition-all duration-300 overflow-hidden"
+      >
+        <div className="bg-gray-100 h-80 flex items-center justify-center">
+          <img
+            src={member.image}
+            alt={member.name}
+            className="max-h-full max-w-full object-contain"
+          />
         </div>
+
+        <div className="p-6 text-center">
+          <h3 className="text-2xl font-semibold text-gray-900">
+            {member.name}
+          </h3>
+          <p className="mt-2 text-gray-600 text-lg">
+            {member.position}
+          </p>
+        </div>
+      </div>
+    ))}
+  </div>
+</div>
       </div>
 
       {/* Legal Disclaimer */}

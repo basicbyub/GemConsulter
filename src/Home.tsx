@@ -145,8 +145,8 @@ const Home: React.FC = () => {
       {/* Hero Section */}
       <div className="relative hero-gradient text-white min-h-[90vh] flex items-center">
         <div className="absolute inset-0">
-  <div className="absolute inset-0 bg-gradient-to-r from-blue-600/45 to-sky-500/45"></div>
-  <div className="absolute inset-0 bg-[url('https://images.unsplash.com/photo-1497366216548-37526070297c?auto=format&fit=crop&w=1950&q=80')] bg-cover bg-center mix-blend-overlay"></div>
+  <div className="absolute inset-0 bg-white/30"></div>
+  <div className="absolute inset-0 bg-[url('https://images.unsplash.com/photo-1497366216548-37526070297c?auto=format&fit=crop&w=1950&q=80')] bg-cover bg-center"></div>
 </div>
 
         <div className="container mx-auto px-4 relative">

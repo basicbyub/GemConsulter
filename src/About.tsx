@@ -255,7 +255,6 @@ const About: React.FC = () => {
     ))}
   </div>
 </div>
-      </div>
 
       {/* Legal Disclaimer */}
       <div className="bg-gray-100 py-6">

@@ -16,20 +16,20 @@ const Navbar: React.FC = () => {
     return () => window.removeEventListener('scroll', handleScroll);
   }, []);
 
-  // 🔹 Fetch API Call
-  useEffect(() => {
-    const fetchData = async () => {
-      try {
-        const response = await fetch('https://gemconsultersbackend.onrender.com/api/contact'); // Replace with your API endpoint
-        const data = await response.json();
-        console.log('Fetched Data:', data);
-      } catch (error) {
-        console.error('Error fetching data:', error);
-      }
-    };
+  // // 🔹 Fetch API Call
+  // useEffect(() => {
+  //   const fetchData = async () => {
+  //     try {
+  //       const response = await fetch('https://gemconsultersbackend.onrender.com/api/contact'); // Replace with your API endpoint
+  //       const data = await response.json();
+  //       console.log('Fetched Data:', data);
+  //     } catch (error) {
+  //       console.error('Error fetching data:', error);
+  //     }
+  //   };
 
-    fetchData();
-  }, []);
+  //   fetchData();
+  // }, []);
 
   const isActive = (path: string) => location.pathname === path;
 

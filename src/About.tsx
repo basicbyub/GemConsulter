@@ -235,13 +235,13 @@ const About: React.FC = () => {
         key={index}
         className="bg-white rounded-xl shadow-lg hover:shadow-xl transition-all duration-300 overflow-hidden"
       >
-        <div className="bg-gray-100 h-80 flex items-center justify-center">
-          <img
-            src={member.image}
-            alt={member.name}
-            className="max-h-full max-w-full object-contain"
-          />
-        </div>
+        <div className="bg-gray-100 flex justify-center pt-6">
+  <img
+    src={member.image}
+    alt={member.name}
+    className="w-64 h-80 object-cover rounded-lg shadow-md"
+  />
+</div>
 
         <div className="p-6 text-center">
           <h3 className="text-2xl font-semibold text-gray-900">

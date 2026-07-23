@@ -1,5 +1,6 @@
 import React, { useState } from "react";
 import { Phone, Mail, MapPin, Send } from "lucide-react";
+import emailjs from "@emailjs/browser";
 
 const Contact: React.FC = () => {
   const [formData, setFormData] = useState({
@@ -18,42 +19,45 @@ const Contact: React.FC = () => {
   };
 
   const handleSubmit = async (e: React.FormEvent) => {
-    e.preventDefault();
-    setLoading(true);
-    setStatus({ type: "", message: "" });
+  e.preventDefault();
 
-    try {
-      const response = await fetch("https://gemconsultersbackend.onrender.com/api/contact", {
-        method: "POST",
-        headers: { "Content-Type": "application/json" },
-        body: JSON.stringify(formData),
-      });
+  setLoading(true);
+  setStatus({ type: "", message: "" });
 
-      const result = await response.json();
+  try {
+    await emailjs.send(
+      import.meta.env.VITE_EMAILJS_SERVICE_ID,
+  import.meta.env.VITE_EMAILJS_TEMPLATE_ID,
+      {
+        from_name: formData.name,
+        from_email: formData.email,
+        phone: formData.phone,
+        message: formData.message,
+      },
+      import.meta.env.VITE_EMAILJS_PUBLIC_KEY
+    );
 
-      if (response.ok) {
-        setStatus({ type: "success", message: "Message sent successfully!" });
-        setFormData({
-          name: "",
-          email: "",
-          phone: "",
-          message: "",
-        });
-      } else {
-        setStatus({
-          type: "error",
-          message: result.error || "Failed to send message.",
-        });
-      }
-    } catch (error) {
-      setStatus({
-        type: "error",
-        message: "Network error. Please try again later.",
-      });
-    }
+    setStatus({
+      type: "success",
+      message: "Your enquiry has been sent successfully!",
+    });
 
-    setLoading(false);
-  };
+    setFormData({
+      name: "",
+      email: "",
+      phone: "",
+      message: "",
+    });
+
+  } catch (error) {
+    setStatus({
+      type: "error",
+      message: "Something went wrong. Please try again.",
+    });
+  }
+
+  setLoading(false);
+};
 
   return (
     <div className="py-16">

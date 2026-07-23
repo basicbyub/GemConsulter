@@ -68,9 +68,10 @@ const Footer: React.FC = () => {
           <div>
             <h3 className="text-xl font-bold mb-4">About Us</h3>
             <p className="text-gray-400 text-sm">
-              We are an independent business consultancy providing professional
-              guidance for vendor onboarding, digital procurement processes,
-              business compliance, and documentation support.
+              We provide independent consultancy services for vendor registration,
+              OEM registration, product catalogue management, bidding assistance,
+              direct purchase support, and business compliance for online
+              procurement platforms.
             </p>
           </div>
 
@@ -105,9 +106,9 @@ const Footer: React.FC = () => {
           <div>
             <h3 className="text-xl font-bold mb-4">Our Services</h3>
             <ul className="space-y-2">
-              <li className="text-gray-400">Vendor Registration Assistance</li>
-              <li className="text-gray-400">Business Compliance Support</li>
-              <li className="text-gray-400">Consultation & Guidance</li>
+              <li className="text-gray-400">Vendor & OEM Registration</li>
+              <li className="text-gray-400">Bidding & Direct Purchase Support</li>
+              <li className="text-gray-400">Catalogue & Compliance Assistance</li>
             </ul>
           </div>
 
@@ -130,15 +131,20 @@ const Footer: React.FC = () => {
         {/* Disclaimer */}
         <div className="border-t border-gray-800 mt-8 pt-6 text-center text-gray-400 text-xs">
           <p className="mb-2">
-            <strong>Disclaimer:</strong> We are an independent business consultancy
-            offering advisory and support services. We are not affiliated with,
-            endorsed by, or officially associated with any government department,
-            public organization, or official procurement platform.
+            <strong>Disclaimer:</strong> We provide independent consultancy and
+            support services for businesses using online procurement systems. We
+            are not affiliated with, endorsed by, or officially associated with
+            any government department, authority, or procurement portal. All
+            trademarks and platform names belong to their respective owners.
           </p>
 
           <div className="flex justify-center gap-4 mt-2">
-            <Link to="/privacy-policy" className="hover:text-white">Privacy Policy</Link>
-            <Link to="/terms" className="hover:text-white">Terms & Conditions</Link>
+            <Link to="/privacy-policy" className="hover:text-white">
+              Privacy Policy
+            </Link>
+            <Link to="/terms" className="hover:text-white">
+              Terms & Conditions
+            </Link>
           </div>
 
           <p className="mt-4">

@@ -153,14 +153,16 @@ const Home: React.FC = () => {
           <div className="mt-10 grid md:grid-cols-2 gap-12 items-center">
             <div className="space-y-8 slide-in">
               <h1 className="text-5xl md:text-6xl font-bold leading-tight">
-                Independent Business Registration Assistance
+                Complete Vendor Registration & Procurement Support
               </h1>
 
               <p className="text-xl text-blue-100 leading-relaxed">
-  We provide independent consultancy services to help businesses
-  streamline vendor onboarding, manage documentation, meet compliance
-  requirements, and navigate digital procurement processes with confidence.
-</p>
+                We provide professional consultancy services for Vendor
+                Registration, OEM Registration, Product Catalogue Management,
+                Bid Participation, Direct Purchase, Order Processing, Compliance,
+                and Documentation to help businesses participate confidently in
+                online procurement platforms.
+              </p>
 
               <div className="flex flex-col sm:flex-row gap-4">
                 <Link
@@ -191,34 +193,37 @@ const Home: React.FC = () => {
         </div>
       </div>
 
-      {/* Trust Section (Softened – No Claims) */}
+      {/* Trust Section */}
       <div className="py-16 bg-white">
         <div className="container mx-auto px-4">
           <div className="grid md:grid-cols-3 gap-8 text-center">
             <div className="p-6 feature-card">
               <h3 className="text-xl font-semibold text-blue-900 mb-2">
-                Independent Guidance
+                Registration Experts
               </h3>
               <p className="text-gray-600">
-                Clear and transparent assistance based on publicly available processes
+                Professional assistance for Vendor Registration, OEM Registration,
+                and profile setup.
               </p>
             </div>
 
             <div className="p-6 feature-card">
               <h3 className="text-xl font-semibold text-blue-900 mb-2">
-                Process-Focused Support
+                Procurement Support
               </h3>
               <p className="text-gray-600">
-                Helping businesses understand requirements and documentation
+                Guidance for catalogue management, bidding, direct purchase,
+                and order-related processes.
               </p>
             </div>
 
             <div className="p-6 feature-card">
               <h3 className="text-xl font-semibold text-blue-900 mb-2">
-                Timely Assistance
+                Dedicated Assistance
               </h3>
               <p className="text-gray-600">
-                Responsive support to guide you at every step
+                Responsive support for documentation, compliance, and procurement
+                requirements.
               </p>
             </div>
           </div>
@@ -233,8 +238,9 @@ const Home: React.FC = () => {
               Why Choose Our Consultancy?
             </h2>
             <p className="text-xl text-gray-600 max-w-2xl mx-auto">
-              We focus on clarity, transparency, and professional assistance
-              without claiming any official affiliation.
+              We provide reliable, transparent, and end-to-end support for
+              vendor registrations, procurement processes, and compliance
+              requirements.
             </p>
           </div>
 
@@ -242,18 +248,21 @@ const Home: React.FC = () => {
             {[
               {
                 icon: <CheckCircle className="w-12 h-12 text-orange-500" />,
-                title: "Clear Guidance",
-                description: "Step-by-step assistance based on defined procedures"
+                title: "End-to-End Support",
+                description:
+                  "Complete assistance from registration and OEM approval to bidding and order management."
               },
               {
                 icon: <Users className="w-12 h-12 text-orange-500" />,
-                title: "Client-First Approach",
-                description: "Support tailored to your business requirements"
+                title: "Experienced Consultants",
+                description:
+                  "Professional guidance tailored to your business and procurement requirements."
               },
               {
                 icon: <Clock className="w-12 h-12 text-orange-500" />,
-                title: "Responsive Support",
-                description: "Timely responses to help you move forward confidently"
+                title: "Fast & Reliable Service",
+                description:
+                  "Quick response and timely support to help you complete every process efficiently."
               }
             ].map((feature, index) => (
               <div
@@ -281,11 +290,13 @@ const Home: React.FC = () => {
         <div className="container mx-auto px-4 relative">
           <div className="max-w-3xl mx-auto text-center text-white">
             <h2 className="text-4xl font-bold mb-6">
-              Need Professional Assistance?
+              Need Expert Procurement Assistance?
             </h2>
+
             <p className="text-xl mb-8 opacity-90">
-              Contact us to understand how our independent consultancy services
-              can help you with registration and compliance processes.
+              Whether you need Vendor Registration, OEM Registration, Product
+              Catalogue Management, Bid Participation, Direct Purchase Support,
+              or compliance guidance, our team is here to help.
             </p>
 
             <Link

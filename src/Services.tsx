@@ -121,9 +121,10 @@ const Services: React.FC = () => {
           <div className="max-w-3xl mx-auto text-center">
             <h1 className="text-4xl font-bold mb-6">Our Services</h1>
             <p className="text-xl">
-              Independent consultancy services providing professional guidance
-              for vendor onboarding, business documentation, compliance, and
-              digital procurement processes.
+              We provide professional consultancy services for Vendor Registration,
+              OEM Registration, Product Catalogue Management, Bid Participation,
+              Direct Purchase, Order Processing, Documentation, Compliance,
+              and complete procurement support.
             </p>
           </div>
         </div>
@@ -135,50 +136,50 @@ const Services: React.FC = () => {
           {[
             {
               icon: <FileCheck className="w-12 h-12 text-orange-500" />,
-              title: "Vendor Registration Assistance",
+              title: "Vendor & OEM Registration",
               description:
-                "Professional guidance to help businesses prepare documentation, complete registration procedures, and organize vendor profiles efficiently.",
+                "Complete assistance with Vendor Registration, OEM Registration, profile creation, document verification, and account setup to help businesses start participating in procurement opportunities.",
               features: [
-                "Document guidance",
-                "Registration assistance",
-                "Vendor profile setup",
-                "Business category selection"
+                "Vendor Registration",
+                "OEM Registration",
+                "Document Verification",
+                "Profile Setup & Updates"
               ]
             },
             {
               icon: <Headphones className="w-12 h-12 text-orange-500" />,
-              title: "Business Support & Consultation",
+              title: "Catalogue & Procurement Support",
               description:
-                "Ongoing assistance to help businesses manage documentation, registration activities, and operational requirements with confidence.",
+                "Professional support for product catalogue creation, product listing, catalogue updates, bid participation, direct purchase, and order-related activities.",
               features: [
-                "Process guidance",
-                "Profile update assistance",
-                "Technical support guidance",
-                "Query resolution"
+                "Product Catalogue Upload",
+                "Product Listing & Updates",
+                "Bid Participation Support",
+                "Direct Purchase Assistance"
               ]
             },
             {
               icon: <CheckCircle className="w-12 h-12 text-orange-500" />,
-              title: "Compliance Assistance",
+              title: "Documentation & Compliance",
               description:
-                "Support in reviewing business documents and understanding compliance requirements to ensure smooth onboarding and operations.",
+                "Expert guidance for preparing business documents, maintaining compliance, resolving profile issues, and ensuring all required information is properly managed.",
               features: [
-                "Document review support",
-                "Compliance checklists",
-                "Regulatory guidance",
-                "Important update notifications"
+                "Business Documentation",
+                "Compliance Assistance",
+                "Profile Issue Resolution",
+                "Regular Profile Maintenance"
               ]
             },
             {
               icon: <BarChart className="w-12 h-12 text-orange-500" />,
-              title: "Business Growth Support",
+              title: "Business Growth & Advisory",
               description:
-                "Advisory services designed to help businesses strengthen their profiles, improve operational readiness, and identify growth opportunities.",
+                "Strategic consultancy to help businesses improve procurement performance, manage orders efficiently, and identify new business opportunities.",
               features: [
-                "Profile improvement guidance",
-                "Performance insights",
-                "Best practice recommendations",
-                "Business growth advisory"
+                "Procurement Consultation",
+                "Order Processing Guidance",
+                "Performance Improvement",
+                "Business Growth Advisory"
               ]
             }
           ].map((service, index) => (
@@ -189,7 +190,11 @@ const Services: React.FC = () => {
                   {service.title}
                 </h3>
               </div>
-              <p className="text-gray-600 mb-6">{service.description}</p>
+
+              <p className="text-gray-600 mb-6">
+                {service.description}
+              </p>
+
               <ul className="space-y-3">
                 {service.features.map((feature, fIndex) => (
                   <li key={fIndex} className="flex items-center text-gray-600">
@@ -207,13 +212,16 @@ const Services: React.FC = () => {
       <div className="bg-gray-50 py-16">
         <div className="container mx-auto px-4 text-center">
           <h2 className="text-3xl font-bold text-gray-900 mb-6">
-            Need Professional Guidance?
+            Need Expert Procurement Assistance?
           </h2>
+
           <p className="text-xl text-gray-600 mb-8">
-            Get in touch with us to learn how our independent consultancy
-            services can support your business goals and simplify important
-            business processes.
+            Whether you need Vendor Registration, OEM Registration, Product
+            Catalogue Management, Bid Participation, Direct Purchase,
+            Documentation, or Compliance support, our experienced consultants
+            are here to help.
           </p>
+
           <Link
             to="/contact"
             className="bg-orange-500 text-white px-8 py-3 rounded-lg hover:bg-orange-600 transition-colors inline-block"
@@ -227,11 +235,13 @@ const Services: React.FC = () => {
       <div className="bg-gray-100 py-6">
         <div className="container mx-auto px-4 text-center text-gray-600 text-sm">
           <p>
-            <strong>Disclaimer:</strong> We are an independent business
-            consultancy providing advisory and support services. We are not
-            affiliated with, endorsed by, or officially associated with any
-            government department, public authority, or official procurement
-            platform.
+            <strong>Disclaimer:</strong> We are an independent consultancy
+            providing advisory and support services for Vendor Registration,
+            OEM Registration, Product Catalogue Management, Bid Participation,
+            Direct Purchase, Documentation, and procurement-related processes.
+            We are not affiliated with, endorsed by, or officially associated
+            with any government department, authority, or procurement portal.
+            All trademarks and platform names belong to their respective owners.
           </p>
         </div>
       </div>

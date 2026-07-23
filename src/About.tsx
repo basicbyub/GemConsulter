@@ -128,10 +128,10 @@ const About: React.FC = () => {
               About Our Consultancy
             </h1>
             <p className="text-xl text-gray-600">
-              We are an independent business consultancy providing professional
-              guidance and end-to-end support for vendor onboarding, business
-              documentation, compliance requirements, and digital procurement
-              processes across various industries.
+              We are an independent consultancy specializing in Vendor Registration,
+              OEM Registration, Product Catalogue Management, Bidding Assistance,
+              Direct Purchase Support, and Compliance Services for businesses
+              participating in online procurement platforms.
             </p>
           </div>
         </div>
@@ -144,18 +144,21 @@ const About: React.FC = () => {
           <div className="bg-white p-8 rounded-lg shadow-lg">
             <h2 className="text-2xl font-bold text-gray-900 mb-4">Our Mission</h2>
             <p className="text-gray-600">
-              Our mission is to simplify complex business procedures by
-              providing reliable guidance, transparent processes, and practical
-              solutions that help organizations grow with confidence.
+              Our mission is to simplify vendor onboarding by providing
+              professional guidance for registrations, OEM approvals,
+              catalogue management, bidding, direct purchases, and
+              compliance requirements, enabling businesses to participate
+              confidently in procurement opportunities.
             </p>
           </div>
 
           <div className="bg-white p-8 rounded-lg shadow-lg">
             <h2 className="text-2xl font-bold text-gray-900 mb-4">Our Vision</h2>
             <p className="text-gray-600">
-              Our vision is to become a trusted business consulting partner,
-              empowering organizations with expert support for compliance,
-              documentation, and digital business opportunities.
+              Our vision is to become a trusted consultancy for businesses by
+              delivering reliable registration, procurement, documentation,
+              and compliance support while helping clients achieve sustainable
+              business growth.
             </p>
           </div>
 
@@ -173,23 +176,23 @@ const About: React.FC = () => {
             {[
               {
                 icon: <Award className="w-12 h-12 text-orange-500" />,
-                title: "Experienced Team",
-                description: "Knowledgeable professionals providing practical guidance"
+                title: "Experienced Professionals",
+                description: "Expert guidance for vendor registration, OEM approvals, and procurement processes."
               },
               {
                 icon: <Users className="w-12 h-12 text-orange-500" />,
-                title: "Client-Centric Approach",
-                description: "Personalized assistance based on your business needs"
+                title: "Client-Focused Support",
+                description: "Personalized solutions tailored to your business requirements."
               },
               {
                 icon: <Target className="w-12 h-12 text-orange-500" />,
-                title: "Process-Focused",
-                description: "Clear, structured, and transparent service delivery"
+                title: "End-to-End Services",
+                description: "From registration and catalogue management to bidding and compliance assistance."
               },
               {
                 icon: <Clock className="w-12 h-12 text-orange-500" />,
-                title: "Timely Support",
-                description: "Efficient coordination to save your valuable time"
+                title: "Quick Turnaround",
+                description: "Timely support to help complete your business processes efficiently."
               }
             ].map((feature, index) => (
               <div key={index} className="text-center p-6">
@@ -214,17 +217,17 @@ const About: React.FC = () => {
           {[
             {
               name: "Himanshu Bansal",
-              position: "Consultant",
+              position: "Business Consultant",
               image: "https://raw.githubusercontent.com/basicbyub/GemConsulter/refs/heads/main/himanshu.jpg"
             },
             {
               name: "Uttam Bansal",
-              position: "Registration Support Specialist",
+              position: "Vendor Registration Specialist",
               image: "https://raw.githubusercontent.com/basicbyub/GemConsulter/refs/heads/main/uttam.JPG"
             },
             {
               name: "Chirag Bansal",
-              position: "Technical Support",
+              position: "Technical Support Executive",
               image: "https://raw.githubusercontent.com/basicbyub/GemConsulter/refs/heads/main/chirag.jpg"
             }
           ].map((member, index) => (
@@ -249,11 +252,13 @@ const About: React.FC = () => {
       <div className="bg-gray-100 py-6">
         <div className="container mx-auto px-4 text-center text-gray-600 text-sm">
           <p>
-            <strong>Disclaimer:</strong> We are an independent business consultancy.
-            We are not affiliated with, endorsed by, or officially associated
-            with any government department, public authority, or official
-            procurement platform. All consulting services are provided
-            independently.
+            <strong>Disclaimer:</strong> We are an independent consultancy
+            providing advisory and support services for vendor registration,
+            OEM registration, product catalogue management, bidding,
+            direct purchase, and compliance. We are not affiliated with,
+            endorsed by, or officially associated with any government
+            department, authority, or procurement portal. All trademarks
+            and platform names belong to their respective owners.
           </p>
         </div>
       </div>
